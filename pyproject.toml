@@ -1,16 +1,16 @@
 [project]
 name = "incremania"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple incremental game"
 readme = "README.md"
 authors = [
     { name = "dk-ties", email = "dk.ties@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
-
-[project.scripts]
-incremania = "incremania:main"
+dependencies = [
+    "flask>=3.1.3",
+    "waitress>=3.0.2",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.18,<0.13.0"]
