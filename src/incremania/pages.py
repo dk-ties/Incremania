@@ -9,3 +9,11 @@ def home():
         "pages/home.html",
         title="Flask + uv",
     )
+
+
+@bp.get("/test")
+def test():
+    return render_template(
+        "pages/test.html",
+        title="Test new Site",
+    )
